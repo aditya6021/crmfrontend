@@ -1,0 +1,294 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db;
+  padding: 10px 20px;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #c0392b;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: text-decoration 0.3s ease;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 5px 0;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+button.remove-button {
+  background-color: #e74c3c;
+
+}
+
+button.remove-button:hover {
+  background-color: #c0392b;
+}
+
+button.send-campaign-button {
+  background-color: #2ecc71;
+}
+
+button.send-campaign-button:hover {
+  background-color: #27ae60;
+}
+
+select, input {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+select:focus, input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  border: 1px solid #bdc3c7;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+li button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+h2 {
+  color: #3498db;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-left {
+  flex: 1;
+  position: relative;
+  background: url('line-particles.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.login-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.login-left .content {
+  position: relative;
+  color: white;
+  padding: 40px;
+  z-index: 1;
+}
+
+.login-left .content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.login-left .content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #357ae8;
+}
+
+/* Past Campaigns Page Styles */
+.history-container {
+  padding: 20px;
+}
+
+.history-container h2 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-list li {
+  background-color: white;
+  border: 1px solid #bdc3c7;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.history-container {
+  padding: 20px;
+}
+
+.history-container h2 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.history-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.history-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.history-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.history-table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.history-table th,
+.history-table td:first-child {
+  border-left: 2px solid #ddd;
+}
+
+.history-table th:last-child,
+.history-table td:last-child {
+  border-right: 2px solid #ddd;
+}
